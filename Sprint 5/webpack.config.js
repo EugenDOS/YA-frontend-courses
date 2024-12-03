@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');         // Импор�
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');  // Импорт плагина для извлечения CSS
 
 module.exports = {
-  entry: './src/scripts/index.js',          // Входная точка для JavaScript
+  entry: './src/scripts/index.js',  // Входная точка для JavaScript
   output: {
     path: path.resolve(__dirname, 'dist'),  // Директория для сборки
     filename: 'main.js',                    // Имя выходного файла
@@ -11,14 +11,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,                 // Загрузка CSS файлов
+        test: /\.css$/, // Загрузка CSS файлов
         use: [
           MiniCssExtractPlugin.loader,  // Извлечение CSS в отдельный файл
           'css-loader',                 // Загрузка и обработка CSS
         ],
       },
       {
-        test: /\.(png|jpg|svg)$/,         // Загрузка изображений
+        test: /\.(png|jpg|svg)$/, // Загрузка изображений
         type: 'asset/resource',
         generator: {
           filename: 'images/[name][ext]', // Путь для изображений
@@ -28,7 +28,7 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/, // Загрузка шрифтов
         type: 'asset/resource',
         generator: {
-          filename: 'fonts/[name][ext]',     // Путь для шрифтов
+          filename: 'fonts/[name][ext]',  // Путь для шрифтов
         },
       },
     ],

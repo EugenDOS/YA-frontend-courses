@@ -1,0 +1,25 @@
+{
+    "name": "fifth-project.mesto.form-validation-and-infrastructure",
+    "version": "1.0.0",
+    "description": "<img src=\"https://i.ibb.co/VV7dm7M/mesto.jpg\" alt=\"Logo of the project\" align=\"right\" width=\"200\" height=\"250\">",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack --mode production",     // Сборка проекта в режиме "production"
+      "dev": "webpack serve --mode production"  // Запуск локального сервера разработки с режимом "production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "css-loader": "^7.1.2",               // Обрабатывает CSS-файлы, позволяет импортировать CSS в JavaScript
+      "file-loader": "^6.2.0",              // Обрабатывает файлы (например, изображения, шрифты), копирует их в папку сборки и возвращает пути к ним
+      "html-webpack-plugin": "^5.6.3",      // Генерирует HTML-файл на основе шаблона и автоматически подключает к нему скомпилированные файлы
+      "mini-css-extract-plugin": "^2.9.2",  // Извлекает CSS в отдельные файлы, чтобы не загружать их инлайново в JavaScript
+      "style-loader": "^4.0.0",             // Вставляет CSS в DOM на стороне клиента, применяется вместе с `css-loader` в режиме разработки
+      "url-loader": "^4.1.1",               // Обрабатывает небольшие файлы (например, изображения) и преобразует их в Base64-строки для встраивания в JavaScript
+      "webpack": "^5.96.1",                 // Основной инструмент для сборки проекта, объединяет и оптимизирует файлы для деплоя
+      "webpack-cli": "^5.1.4",              // Интерфейс командной строки для работы с Webpack (например, для запуска сборки)
+      "webpack-dev-server": "^5.1.0"        // Локальный сервер для разработки, обеспечивает автоматическое обновление страницы при изменении файлов
+    }
+  }
+  
